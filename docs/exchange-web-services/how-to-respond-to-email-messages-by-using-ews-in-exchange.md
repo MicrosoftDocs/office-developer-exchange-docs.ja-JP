@@ -29,7 +29,7 @@ EWS マネージ API または EWS を使用して、メッセージに返信し
 ## <a name="reply-to-an-email-message-by-using-the-ews-managed-api"></a>EWS マネージ API を使用してメール メッセージに返信する
 <a name="bk_replyewsma"> </a>
 
-EWS マネージ API には、メッセージへの応答に使用できる [ Reply ](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) と [CreateReply](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx) という 2 つのメソッドがあります。 **Reply** メソッドは、2 つのパラメーターだけを取ります。既存の本文の先頭に追加する応答メッセージと、すべての受信者に送信するか (ture) 送信者だけに送信するか (false) を指定する **Boolean** 値です。 他の受信者をメッセージに追加したり、応答に追加プロパティを設定したり、添付物を追加したりする必要がある場合は、**CreateReply** メソッドを使用します。このメソッドでは、[EmailMessage](email-properties-and-elements-in-ews-in-exchange.md) オブジェクトで使用可能なすべての[ファースト クラスのプロパティ](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)を設定できます。 
+EWS マネージ API には、メッセージへの応答に使用できる [ Reply ](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.reply%28v=exchg.80%29.aspx) と [CreateReply](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage.createreply%28v=exchg.80%29.aspx) という 2 つのメソッドがあります。 **Reply** メソッドは、2 つのパラメーターだけを取ります。既存の本文の先頭に追加する応答メッセージと、すべての受信者に送信するか (true) 送信者だけに送信するか (false) を指定する **Boolean** 値です。 他の受信者をメッセージに追加したり、応答に追加プロパティを設定したり、添付物を追加したりする必要がある場合は、**CreateReply** メソッドを使用します。このメソッドでは、[EmailMessage](email-properties-and-elements-in-ews-in-exchange.md) オブジェクトで使用可能なすべての[ファースト クラスのプロパティ](http://msdn.microsoft.com/ja-JP/library/microsoft.exchange.webservices.data.emailmessage%28v=exchg.80%29.aspx)を設定できます。 
   
 次のコード例は、**Reply** メソッドを使用してメール メッセージに応答する方法を示しています。 
   
